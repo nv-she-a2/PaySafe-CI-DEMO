@@ -57,11 +57,11 @@
             }
 
             function paysafeResultCallback(instance, error, result) {
-                if (result) {
-                    alert(JSON.stringify(result, null, 4));
-                    } else {
-                    alert(error);
-                }
+                // if (result) {
+                //     alert(JSON.stringify(result, null, 4));
+                //     } else {
+                //     alert(error);
+                // }
                 if (result.paymentHandleToken) {
                     alert("Payment Token (Returned By Paysafe GW):"+ result.paymentHandleToken);
                     const confirmPaymentRequest = new XMLHttpRequest();
