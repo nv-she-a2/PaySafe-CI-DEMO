@@ -63,7 +63,7 @@
                 //     alert(error);
                 // }
                 if (result.paymentHandleToken) {
-                    alert("Payment Token (Returned By Paysafe GW):"+ result.paymentHandleToken);
+                    // alert("Payment Token (Returned By Paysafe GW):"+ result.paymentHandleToken);
                     const confirmPaymentRequest = new XMLHttpRequest();
                     confirmPaymentRequest.onreadystatechange = function () {
                     if (isXhrReady(confirmPaymentRequest)) {
